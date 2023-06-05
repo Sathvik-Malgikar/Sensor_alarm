@@ -3,7 +3,7 @@ workflows:
         scripts:
             - name: Build Android APK
               working_directory: android
-              script: ./gradlew.exe assembleRelease
+              script: ./gradlew assembleRelease
         artifacts:
             - app/build/outputs/**/**/*.apk
         name: Codemagic Sample Workflow
