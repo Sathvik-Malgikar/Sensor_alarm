@@ -8,7 +8,6 @@ import TcpSocket from 'react-native-tcp';
 
 
 
-
 function Pack_crc(ptr, len) {
   var crc;
   var dat;
@@ -23,11 +22,6 @@ function Pack_crc(ptr, len) {
 
   return crc & 0xffff;
 }
-
-
-
-
-
 
 
 
