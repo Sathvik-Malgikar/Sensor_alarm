@@ -40,7 +40,7 @@ workflows:
           - sathvik.malgikar@gmail.com
         notify:
           success: true
-          failure: true
+          failure: false
       
 
 
