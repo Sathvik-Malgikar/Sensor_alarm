@@ -16,7 +16,7 @@ workflows:
       - name: Install npm dependencies
         script: | 
           npm install
-     
+          chmod +x android/gradlew
   
       - name: Build Android release
         script: | 

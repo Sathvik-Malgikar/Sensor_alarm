@@ -338,7 +338,7 @@ var dateFormat = new Date(zeit * 1000);
           const connectedDevices = networks.filter(network => network.BSSID !== '00:00:00:00:00:00'); // mac address format of gps tracker
           // Process the list of connected devices
           establishTCPConnections(connectedDevices);
-        });
+        });  
       }
     });
     
