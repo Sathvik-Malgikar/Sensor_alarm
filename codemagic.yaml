@@ -1,17 +1,17 @@
 workflows:
     sample-workflow:
         scripts:
-        - name: Build Android APK
-            working_directory: android
-            script: ./gradlew assembleRelease
+            - name: Build Android APK
+              working_directory: android
+              script: ./gradlew assembleRelease
         artifacts:
-        - app/build/outputs/**/**/*.apk
+            - app/build/outputs/**/**/*.apk
         name: Codemagic Sample Workflow
         max_build_duration: 120
         instance_type: mac_mini_m1
         publishing:
             email:
                 recipients:
-                - sathvik.malgikar@gmail.com
+                    - sathvik.malgikar@gmail.com
 
 
